@@ -1,5 +1,7 @@
 <template>
-  <button @click="click">Clicked {{ counter }} times </button>
+<button @click="clicker"> clicked ButtonVue {{counter}} times :) 
+</button>
+
 </template>
 
 <script>
@@ -10,12 +12,10 @@ export default {
       counter: 0,
     };
   },
-  methods: {
-    click() {
-      this.counter++;
-    },
+  methods:{
+      clicker(){
+          this.counter++;
+      },
   },
-}
+};
 </script>
-
-

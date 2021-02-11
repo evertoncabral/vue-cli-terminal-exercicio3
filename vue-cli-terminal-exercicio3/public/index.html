@@ -2,19 +2,23 @@
 <html lang="">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-
-  <title>Aula 2</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title> aula 2 </title>
 </head>
 
 <body>
-  oi 1
-  <div id='root'> oi 2 </div>
 
 
-  <!-- <script src="https://unpkg.com/vue@2.4.2"></script> -->
+  <div id="root"></div>
+
+  <script type="text/x-template" id="button-x-template">
+  <button @click="clicker"> clicked Button-x-template {{counter}} times :) 
+</button>
+
+    </script>
 </body>
 
 </html>

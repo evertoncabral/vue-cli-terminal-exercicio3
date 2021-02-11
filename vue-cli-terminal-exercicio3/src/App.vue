@@ -1,27 +1,36 @@
 <template>
-  <div id='app'>
+  <div id="app">
     <ButtonVue></ButtonVue>
     <ButtonString></ButtonString>
+    <ButtonTemplateString></ButtonTemplateString>
+    <ButtonXTemplate></ButtonXTemplate>
+    <ButtonInline inline-template>
+      <button @click="clicker">
+        clicked Button Inline {{ counter }} times :)
+      </button>
+    </ButtonInline>
+    <ButtonRender></ButtonRender>
+    <ButtonJSX></ButtonJSX>
   </div>
 </template>
 
 <script>
-  import ButtonVue from './ButtonVue.vue';
+import ButtonVue from "./ButtonVue.vue";
 
-export default  {
-  name: 'App',
+export default {
+  name: "App",
   components: {
     ButtonVue,
-  }
-}
+  },
+};
 </script>
 
 <style>
-  #app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 </style>
