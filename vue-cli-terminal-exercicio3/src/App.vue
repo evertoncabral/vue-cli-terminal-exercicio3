@@ -1,20 +1,27 @@
 <template>
-  <div id="app">
+  <div id='app'>
+    <ButtonVue></ButtonVue>
+    <ButtonString></ButtonString>
   </div>
 </template>
 
 <script>
-export default {
-  name: "App",
+  import ButtonVue from './ButtonVue.vue';
+
+export default  {
+  name: 'App',
+  components: {
+    ButtonVue,
+  }
 }
 </script>
 
 <style>
-#app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
+  #app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
 </style>
